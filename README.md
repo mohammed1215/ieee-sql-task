@@ -1,10 +1,10 @@
 # ieee-sql-task
 1- i didn't know how to solve this one
-```
+```sql
 ```
 
 2- 
-```
+``` sql
 select product_id, product_name, description
 from products
 where description like '%SN____-____ %'
@@ -13,7 +13,7 @@ where description like '%SN____-____ %'
  ```
 
 3- in this problem my code didn't work fully
-```
+```sql
 with 
 
  latest_score as
@@ -29,7 +29,7 @@ where latest_score.first_score is not null;
 ```
 
 4-
-```
+```sql
 select contest_id,round(count(*) * 100/(select count(user_id) from Users),2) as percentage  from Users u join Register r on u.user_id = r.user_id 
 group by contest_id
 order by percentage desc,contest_id
